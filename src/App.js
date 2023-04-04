@@ -15,6 +15,7 @@ function WeatherPage() {
       `http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${API_KEY}`
     );
     const data = response.data;
+    console.log(data);
     const weather = data.list.map((item) => ({
       dt_txt: item.dt_txt,
       humidity: item.main.humidity,
