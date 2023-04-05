@@ -44,7 +44,7 @@ function WeatherPage() {
 
   return (
     <div className="sm:text-xs flex flex-col justify-center mt-10 mb-20 ml-auto mr-auto pt-5 pb-5 items-center bg-white w-1/2 max-sm:w-full rounded-3xl">
-      <h1 className="text-2xl md:text-4xl">Weather Page</h1>
+      <h1 className="text-2xl md:text-4xl"><img src="./logo_white_cropped.png" alt="Logo" />Weather Page</h1>
       <div className="flex p-2 max-sm:flex-col">
         <label htmlFor="city-select">Select a city:</label>
         <select id="city-select" value={city} onChange={handleCityChange}>
