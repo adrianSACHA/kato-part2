@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/kato-part2/static/css/main.d7ab7860.css",
-    "main.js": "/kato-part2/static/js/main.98ea3429.js",
+    "main.css": "/kato-part2/static/css/main.f5e8b3fb.css",
+    "main.js": "/kato-part2/static/js/main.06243689.js",
     "static/js/787.4233ffb9.chunk.js": "/kato-part2/static/js/787.4233ffb9.chunk.js",
+    "static/media/logo_white_cropped.png": "/kato-part2/static/media/logo_white_cropped.4595304db3173f1f94c5.png",
     "index.html": "/kato-part2/index.html",
-    "main.d7ab7860.css.map": "/kato-part2/static/css/main.d7ab7860.css.map",
-    "main.98ea3429.js.map": "/kato-part2/static/js/main.98ea3429.js.map",
+    "main.f5e8b3fb.css.map": "/kato-part2/static/css/main.f5e8b3fb.css.map",
+    "main.06243689.js.map": "/kato-part2/static/js/main.06243689.js.map",
     "787.4233ffb9.chunk.js.map": "/kato-part2/static/js/787.4233ffb9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d7ab7860.css",
-    "static/js/main.98ea3429.js"
+    "static/css/main.f5e8b3fb.css",
+    "static/js/main.06243689.js"
   ]
 }
