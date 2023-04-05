@@ -15,11 +15,13 @@ function WeatherPage() {
       `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${API_KEY}&units=metric`
     );
     const data = response.data;
-    console.log(data);
     const weather = data.list.map((item) => ({
       dt_txt: item.dt_txt,
       humidity: item.main.humidity,
       temp: item.main.temp,
+      feels_like: item.main.feels_like,
+      weather: item.weather[0].main, 
+      icon: item.weather[0].icon,
     }));
     setWeatherData(weather);
     setIsLoading(false);
@@ -48,6 +50,7 @@ function WeatherPage() {
         <select id="city-select" value={city} onChange={handleCityChange}>
           <option value="London">London</option>
           <option value="Munich">München</option>
+          <option value="Elbląg">Elbląg</option>
         </select>
       </div>
       {isLoading ? (
@@ -59,6 +62,8 @@ function WeatherPage() {
               <th className="border border-slate-600 p-2">Date and Time</th>
               <th className="border border-slate-600 p-2">Humidity</th>
               <th className="border border-slate-600 p-2">Temperature</th>
+              <th className="border border-slate-600 p-2">Feels Like</th>
+              <th className="border border-slate-600 p-2">Weather</th>
             </tr>
           </thead>
           <tbody>
@@ -71,10 +76,17 @@ function WeatherPage() {
                   {item.dt_txt}
                 </td>
                 <td className="text-center border border-slate-700 p-2">
-                  {item.humidity}
+                  {item.humidity}%
                 </td>
                 <td className="text-center border border-slate-700 p-2">
                   {item.temp}
+                </td>
+                <td className="text-center border border-slate-700 p-2">
+                  {item.feels_like}
+                </td>
+                <td className="text-center border border-slate-700 p-2">
+                  {item.weather}
+                  <img className="w-5 h-5" src={`https://openweathermap.org/img/wn/${item.icon}.png`} alt="weather" />
                 </td>
               </tr>
             ))}
