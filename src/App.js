@@ -68,7 +68,7 @@ function WeatherPage() {
       ) : (
         <table className="table-fixed border-none  max-sm:text-xs">
           <thead>
-            <tr>
+            <tr className="text-white">
               <th className="border-none  bg-slate-600 p-2">Date and Time</th>
               <th className="border-none  bg-slate-600 p-2">Humidity</th>
               <th className="border-none  bg-slate-600 p-2">Temp</th>
