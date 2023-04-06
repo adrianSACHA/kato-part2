@@ -66,7 +66,7 @@ function WeatherPage() {
           Loading...
         </div>
       ) : (
-        <table className="table-fixed border-none  max-sm:text-xs">
+        <table className="table-auto border-none  max-sm:text-xs w-1/2">
           <thead>
             <tr className="text-white">
               <th className="border-none  bg-slate-600 p-2">Date and Time</th>
