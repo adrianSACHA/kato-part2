@@ -35,7 +35,7 @@ function WeatherPage() {
   useEffect(() => {
     const interval = setInterval(() => {
       fetchData();
-    }, 10000);
+    }, 30000);
     return () => clearInterval(interval);
   }, [city]);
 
