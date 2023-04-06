@@ -1,7 +1,7 @@
 To do:
--change readme
--change loading text for svg?
--layout colors need to be changed
+- change readme
+- change loading text for svg?
+- layout colors need to be changed
 
 ------------------------------------------
 
