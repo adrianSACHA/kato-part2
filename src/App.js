@@ -26,7 +26,10 @@ function WeatherPage() {
       icon: item.weather[0].icon,
     }));
     setWeatherData(weather);
-    setIsLoading(false);
+ 
+   setTimeout(() => {
+      setIsLoading(false);
+    }, 1800);
   };
 
   useEffect(() => {
