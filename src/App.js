@@ -2,6 +2,7 @@ import "./App.css";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Logo from "./logo_white_cropped.png";
+import Elipse from "./elipse.svg";
 
 const API_KEY = "c99495cd9bff3b6d02b414b31921081a";
 
@@ -62,8 +63,12 @@ function WeatherPage() {
         </select>
       </div>
       {isLoading ? (
-        <div className="text-white text-4xl h-screen flex pt-36 max-sm:pt-20">
-          Loading...
+        <div className="h-screen flex max-sm:pt-10">
+          <img
+            className="animate-spin h-auto max-sm:h-1/4"
+            src={Elipse}
+            alt="Logo"
+          />
         </div>
       ) : (
         <table className="table-auto border-none  max-sm:text-xs w-1/2">
@@ -82,18 +87,20 @@ function WeatherPage() {
                 key={index}
                 className="odd:bg-slate-400 even:bg-slate-300 hover:bg-slate-200"
               >
-                <td className="text-center border-none  p-2">{item.dt_txt}</td>
-                <td className="text-center border-none  p-2">
+                <td className="text-center border-none p-2">{item.dt_txt}</td>
+                <td className="text-center border-none p-2">
                   {item.humidity}%
                 </td>
-                <td className="text-center border-none  p-2">{item.temp}</td>
-                <td className="text-center border-none  p-2">
-                  {item.feels_like}
+                <td className="text-center border-none p-2">
+                  {item.temp.toFixed(0)}
                 </td>
-                <td className="text-center border-none  p-2">
+                <td className="text-center border-none p-2">
+                  {item.feels_like.toFixed(0)}
+                </td>
+                <td className="flex flex-col items-center justify-center justify-items-center border-none p-2">
                   {item.weather}
                   <img
-                    className="w-5 h-5"
+                    className="flex justify-items-center w-5 h-5"
                     src={`https://openweathermap.org/img/wn/${item.icon}.png`}
                     alt="weather"
                   />
@@ -103,7 +110,7 @@ function WeatherPage() {
           </tbody>
         </table>
       )}
-      <img className="w-20 h-10 mt-3" src={Logo} alt="Logo" />
+      <img className="w-20 h-auto mt-3" src={Logo} alt="Logo" />
     </div>
   );
 }
