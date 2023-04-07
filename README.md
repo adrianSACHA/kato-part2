@@ -1,9 +1,20 @@
 To do:
-- change readme
-- change loading text for svg?
 - layout colors need to be changed
-
 ------------------------------------------
+Second part
+==========
+
+What should be done:
+
+- Create a single React App
+- Create a page with single select with options "London", "München"
+- Fetch data for selected option - city for example `https://samples.openweathermap.org/data/2.5/forecast?q=München,us&appid=API_KEY`
+- Display in table all results "dt_txt", "humidity", "temp" - see `data.png`
+- When selected please fetch and update results every 10 seconds
+
+You can use bootstrap or create table by your own. There are no requirements regarding RWD.
+
+Please configure "appid" as parameter.
 
 # Getting Started with Create React App
 
