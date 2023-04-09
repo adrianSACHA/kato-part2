@@ -68,7 +68,7 @@ function WeatherPage() {
       {isLoading ? (
         <div className="h-screen flex max-sm:pt-10">
           <img
-            className="animate-spin h-auto max-sm:h-1/4"
+            className="animate-spin h-auto max-sm:h-1/5"
             src={Elipse}
             alt="Logo"
           />
