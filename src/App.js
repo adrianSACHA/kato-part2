@@ -88,7 +88,7 @@ function WeatherPage() {
             {weatherData.map((item, index) => (
               <tr
                 key={index}
-                className="odd:bg-slate-400 even:bg-slate-300 hover:bg-slate-200"
+                className="odd:bg-slate-500 even:bg-slate-400 hover:bg-slate-200"
               >
                 <td className="text-center border-none p-2">{item.dt_txt}</td>
                 <td className="text-center border-none p-2">
