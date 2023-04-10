@@ -95,10 +95,10 @@ function WeatherPage() {
                   {item.humidity}%
                 </td>
                 <td className="text-center border-none p-2">
-                  {item.temp.toFixed(0)}
+                  {item.temp.toFixed(0)}&#176;
                 </td>
                 <td className="text-center border-none p-2">
-                  {item.feels_like.toFixed(0)}
+                  {item.feels_like.toFixed(0)}&#176;
                 </td>
                 <td className="flex flex-col items-center justify-center justify-items-center border-none p-2">
                   {item.weather}
