@@ -49,7 +49,7 @@ function WeatherPage() {
 
   return (
     <div className="sm:text-xs flex flex-col justify-center mt-10 mb-20 ml-auto mr-auto pt-5 pb-5 items-center bg-slate-800 w-1/2 max-sm:w-full rounded-3xl">
-      <h1 className="text-white flex flex-row text-2xl md:text-4xl">
+      <h1 className="text-white flex flex-row text-2xl md:text-4xl p-8">
         Weather Page
       </h1>
       <div className="flex p-2 max-sm:flex-col text-white">
@@ -84,11 +84,11 @@ function WeatherPage() {
               <th className="border-none  bg-slate-600 p-2">Weather</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className="text-white">
             {weatherData.map((item, index) => (
               <tr
                 key={index}
-                className="odd:bg-slate-500 even:bg-slate-400 hover:bg-slate-200"
+                className="odd:bg-slate-500 even:bg-slate-400 hover:bg-slate-200 hover:text-slate-800"
               >
                 <td className="text-center border-none p-2">{item.dt_txt}</td>
                 <td className="text-center border-none p-2">
@@ -113,7 +113,7 @@ function WeatherPage() {
           </tbody>
         </table>
       )}
-      <img className="w-20 h-auto mt-3" src={Logo} alt="Logo" />
+      <img className="w-20 h-auto mt-6 mb-6" src={Logo} alt="Logo" />
     </div>
   );
 }
