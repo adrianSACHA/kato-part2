@@ -62,6 +62,8 @@ function WeatherPage() {
         >
           <option value="London">London</option>
           <option value="Elbląg">Elbląg</option>
+          <option value="Radogoszcz">Radogoszcz</option>
+          <option value="Kraków">Kraków</option>
           <option value="Munich">München</option>
         </select>
       </div>
